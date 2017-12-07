@@ -1,0 +1,37 @@
+<!-- Jesse Miettinen 1601555 -->
+
+<!-- Menu button to open menu on each page-->
+<ion-header>
+    <ion-navbar color="dark">
+      <ion-buttons start>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      </ion-buttons>
+      <ion-title >Personal Information</ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding class="bg"><br>
+    Hi, Jesse here! Thanks for taking the time to look at my CV!<br><br>
+
+    You can navigate to different parts of the CV using the tabs and logout using the menu pulldown on top-right.<br><br><br>
+
+
+
+
+<!-- Picture added -->
+    <ion-list >
+        <img src="./assets/img/pic1.png"/>
+        <br>
+        <i>Would put a real picture here if I ended up using this app.</i>
+      
+    </ion-list>
+    
+        <ion-item class="bg1">
+            <!--Shows graduation date -->
+              <ion-label>Graduation date:</ion-label>
+              <ion-datetime displayFormat="DDD DD.MM.YY" min="2017" max="2021" [dayShortNames]="operaShortDay" [(ngModel)]="graduating"></ion-datetime>
+            </ion-item>
+      
+  </ion-content>

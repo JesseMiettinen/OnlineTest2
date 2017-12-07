@@ -1,0 +1,39 @@
+<!--Jesse Miettinen 1601555-->
+  
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg"  padding>
+    <button ion-button color="danger" (click)="loginwo()">Login without registering</button>
+<!--ngModel for validating the user details-->
+  <ion-item class="bg"  >
+    <ion-label floating  >Email Address</ion-label>
+  
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    
+  </ion-item>
+
+
+
+<ion-item class="bg" >
+  <ion-label floating >Password</ion-label>
+
+  <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+
+</ion-item>
+<br>
+<!--Click function to make active buttons-->
+<button ion-button color="danger" (click)="login(user)">Login</button>
+
+<button ion-button color="secondary" (click)="register()">Register</button>
+<br><br>
+Repeated failed login input attempts may cause issues with logging on succesfully.
+
+</ion-content>
